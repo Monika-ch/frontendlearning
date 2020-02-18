@@ -1,0 +1,142 @@
+body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    border-left: 150px solid transparent;
+    border-image: url('../img/abstract1.jpg!d') 150 round;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.background img{
+    float: left;
+    width: 20%;
+    position: -400px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+
+}
+
+.dark{
+
+}
+
+
+/* Header */
+header{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    color: honeydew;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    min-height: 70px;
+    border-bottom: rgb(255, 136, 0) 3px solid;
+}
+
+header a{
+    color: honeydew;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+    word-spacing: 6px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight{
+    color: rgb(255, 136, 0);
+    
+    font-weight: bold;
+}
+
+header .current a{
+    color: rgb(255, 136, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: rgb(255, 230, 198);
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    background: url('../img/showcase12.jpg') no-repeat 0 -200px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.582);
+    background-size: 100%;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+#showcase p{
+    font-size: 20px;
+    font-weight: 530;
+}
+
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button{
+    height: 38px;
+    background: rgb(255, 136, 0);
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+/* rgb(255, 136, 0); gold */

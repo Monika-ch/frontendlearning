@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Cheat Sheet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <a href="Blog.html">Go to blog</a>
+        <hr>
+
+        <!-- Heading -->
+
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+
+        <!-- Paragraph -->
+
+        <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Repellat eos culpa facilis incidunt explicabo esse voluptatibus! Quidem distinctio dignissimos maxime iure nisi! Ullam nulla impedit quae aliquam fugit porro dolorum excepturi unde libero asperiores repellat odit corporis facere, in quos dolor optio molestias quia quo? Voluptas asperiores fugiat reprehenderit tempora aut fugit sed? Voluptates laudantium fugiat quasi autem necessitatibus ad cupiditate impedit modi itaque, earum veritatis, aliquam iusto commodi harum quas quam! Voluptatum delectus odio sit porro, veniam laboriosam quo at quisquam placeat vel odit similique quos ipsam repellat cumque eaque doloribus ex culpa quibusdam asperiores! Obcaecati cumque est ullam!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae, odit ipsam <a href="http://google.com">culpa tempora illo</a> <!--if not adding *target="blank"* then the link opens in the same page--> ipsa numquam ducimus cumque <a href="http://google.com" target="blank"> <!--by adding *target="blank"* the link opens in the new tab-->consequuntur modi voluptas ratione</a> quibusdam fuga inventore maxime, ea, ipsum hic. At corrupti facere impedit ex in necessitatibus inventore alias cumque, doloribus officiis. Eum expedita esse perspiciatis, dicta quae error beatae eos quam debitis possimus exercitationem et quod, provident quidem magni? Dolores sapiente aperiam corrupti recusandae quam error expedita! Mollitia perferendis aliquam fugit vitae recusandae, adipisci ut, quos atque pariatur eius dolore consectetur iste velit aperiam quasi quisquam ad sequi aut a necessitatibus. Suscipit quibusdam nisi recusandae. Atque itaque officiis alias.</p>
+
+
+        <!-- Lists -->
+
+        <!-- 1st type= Unordered Lists -->
+        <ul>
+            <li>List Item One </li>
+            <li>List Item Two </li>
+            <li>List Item Three </li>
+            <li>List Item Four </li>
+        </ul>
+
+        <ol>
+            <li>List Item One </li>
+            <li>List Item Two </li>
+            <li>List Item Three </li>
+            <li>List Item Four </li>
+        </ol>
+
+
+        <!-- Tables -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Brad Traversy</td>
+                    <td>brad@something.com</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Brandon Traversy</td>
+                    <td>brandon@something.com</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>Braditte Traversy</td>
+                    <td>braditte@something.com</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+        <br>
+        <hr>
+        <br>
+
+
+        <!-- FORM -->
+
+        <form action="process.php" method="POST">
+            <label>First Name</label>
+            <input type="text" name="firstName">
+
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+
+            <label>Email</label>
+            <input type="email" name="email">
+
+            <label>Message</label>
+            <textarea name="message"></textarea>
+
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <select>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </select>
+        </form>
+
+        <!-- vs (using div and br) -->
+        <br><hr><br>
+
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name:</label>
+                <input type="text" name="firstName" value="Enter First Name">
+            </div>
+            <br>          <!--difference between attributes "value"vs "placeholder"--> 
+            <div>
+                <label>Last Name:</label>
+                <input type="text" name="lastName" placeholder="Enter Last Name">
+            </div>
+            <br>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message:</label>
+                <input type="textarea" name="message">
+            </div>
+            <br>
+            <div>
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">                         
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+
+
+        <br><br><br>
+
+
+
+        <!-- Button -->
+
+        <button>Click Me</button>
+                <!-- But this wont work without Java Script -->
+
+
+
+        <br><br><br>
+
+
+        <!-- Image -->
+
+        <img src="Sample.jpg" alt="My Little Birdie" >
+        <br>
+                <!-- vs -->
+        <img src="Images/Sample.jpg" alt="My Little Birdie">
+        <br>
+
+        <a href="Images/Sample.jpg">
+            <img src="Images/Sample.jpg" alt="My Little Birdie" width="220px" height="220px">
+        </a>    
+        <br><br><br><br>
+
+
+
+    <!-- Quotations -->
+
+
+        <blockquote cite="http://traversymedia.com">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptate perferendis assumenda sequi eaque, suscipit cumque sapiente, aliquid labore velit deleniti veniam nostrum itaque possimus similique accusantium harum esse doloribus! Nemo a veniam amet porro natus voluptas sed deserunt error harum aut perspiciatis maiores vitae adipisci totam, hic minima ipsa voluptatem dolore quasi optio nesciunt.
+        </blockquote>
+
+        <p>The <abbr title="World Wide Web"> www </abbr>is awesome.</p>
+
+        <p><cite>HTML Crash Course</cite>by Brad Traversy</p>
+
+
+        <div style="margin-top:500px"></div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /*  CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover{
+    color: skyblue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+}
+
+section h1{
+    font-size: 4rem;
+}
+
+section p{
+    font-size: 1.5rem;
+}
+
+/* Section Images */
+section#home{
+    background: url('../images/d152zup-0c32b457-3c76-4d0c-99a2-a507115d155d.jpg') no-repeat center center/cover;
+}
+
+section#about{
+    background: url('../images/circle-light-portal-dark.jpg') no-repeat center center/cover;
+}
+
+section#service{
+    background: url('../images/light-dark-night-bokeh-rain-g3-1600x900.jpg') no-repeat center center/cover;
+}
+
+section#contact{
+    background: url('../images/lines_multicolored_neon_light_119875_1600x900.jpg') no-repeat center center/cover;
+}

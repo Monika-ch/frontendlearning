@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/formtrial.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="heading">Sp<!--<img class="football" src="images/football1.png">-->orts Fan Club</h1>
+        </header>
+
+        <div class="container">
+            <form action="process.php" method="POST" class="my-form">
+                <div class="form-group">
+                    <label class="block">Name:</label>
+                    <input type="text" name="name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label class="block">Email:</label>
+                    <input type="text" name="email" placeholder="e.g. alexa@something.com">
+                </div>
+
+                <div class="form-group1">
+                    <label class="birthdate">Birth Date:</label>
+                    <input type="date" name="birthdate">
+
+                    <label class="age">Age:</label>
+                    <input type="number" name="age" value="30">
+                </div>
+
+                <div class="form-group1">
+                    <label class="gender">Gender:</label>
+                    <select name="gender" id="">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label class="nationality">Nationality:</label>
+                    <input type="radio" name="nationality"  value="Indian"  checked id=""> Indian
+                    <input type="radio" name="nationality" value="Non-Indian">Non-Indian
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Sports:</label>
+                    <input type="checkbox" name="sports" value="hockey"> Hockey
+                    <input type="checkbox" name="sports" value="cricket"> Cricket
+                    <input type="checkbox" name="sports" value="badminton"> Badminton
+                    <input type="checkbox" name="sports" value="basketball"> Basketball
+                    <input type="checkbox" name="sports" value="football"> Football
+                    <input type="checkbox" name="sports" value="tennis"> Table-tennis
+                    <input type="checkbox" name="sports" value="soccer"> Soccer
+                </div>
+
+                <div class="form-group">
+                    <label>Message:</label>
+                    <textarea name="message" placeholder="Enter Your Message"></textarea>
+                </div>
+
+                <div>
+                    <input class="button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
