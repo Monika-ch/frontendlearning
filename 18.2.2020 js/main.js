@@ -292,44 +292,145 @@ console.log(myStr);
 
 //CONCATENATING(ADDING) STRINGS WITH PLUS OPERATOR
 var ourStr = "I come First. " + "I come Second.";
-console.log(ourStr);
+console.log(ourStr);        //I come First. I come Second.
 
 var myStr = "This is the start. " + "This is the end.";
-console.log(myStr);
+console.log(myStr);         //This is the start. This is the end.
 
 //CONCATENATING STRINGS WITH PLUS EQUALS OPERATOR
 var ourStr = "I come First. ";
 ourStr += "I come Second.";
-console.log(ourStr);
+console.log(ourStr);        //I come First. I come Second.
 
 var myStr = "This is the start. ";
 myStr += "This is the end.";
-console.log(myStr);
+console.log(myStr);         //This is the start. This is the end.
 
 //CONSTRUCTING STRING WITH VARIABLES
 var ourNam = "freeCodeCamp";
 var ourStr = "Hello, our name is " + ourNam + ", how are you?";
-console.log(ourStr);
+console.log(ourStr);        //Hello, our name is freeCodeCamp, how are you?
 
 var myNam = "Beau";
 var myStr = "My name is " + myNam + " and I am well!";
-console.log(myStr);
+console.log(myStr);         //My name is Beau and I am well!
 
 //APPENDING VARIABLES TO STRINGS
 var adjctve = "awesome!";
 var str = "freeCodeCamp is ";
 str += adjctve;
-console.log(str);
+console.log(str);                   //freeCodeCamp is awesome!
 
 var adj = "worthwhile!";
 var Str = "Learning to code is ";
 Str += adj;
-console.log(Str);
+console.log(Str);                   //Learning to code is worthwhile!
 
 //FIND LENGTH OF STRING
 var firstNameLength = 0;
-var firstName = "Ada";
+var firstName = "Ada"
 firstNameLength = firstName.length;
-console.log(firstNameLength);
-firstName = firstNameLegth.length;
-console.log(firstName);
+console.log(firstNameLength);           //3
+
+var lastNameLength = 0;
+var lastName = "Lovelace";
+lastNameLength = lastName.length;
+console.log(lastNameLength);            //8
+
+lastName += firstName;
+console.log(lastName);                  //LovelaceAda
+console.log(lastName.length);           //11
+
+var x = "Saurabh";
+var y = "Singh"
+x += y;
+console.log(x);                         //SaurabhSingh
+console.log(x.length);                  //12
+
+//BRACKET NOTATION TO FIND NTH CHARACTER IN STRING
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+firstLetterOfFirstName = firstName[0];      //A...........in JS number starts from 0 not 1; JS is zero base index!
+console.log(firstLetterOfFirstName);
+secondLetterOfFirstName = firstName[1];      //d
+console.log(secondLetterOfFirstName);
+thirdLetterOfFirstName = firstName[2];      //a
+console.log(thirdLetterOfFirstName);
+fourthLetterOfFirstName = firstName[3];      //undefined
+console.log(fourthLetterOfFirstName);
+
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName);         //L
+secondLetterOfLastName = lastName[1];
+console.log(secondLetterOfLastName);        //o
+thirdLetterOfLastName = lastName[2];
+console.log(thirdLetterOfLastName);         //v
+fourthLetterOfLastName = lastName[3];
+console.log(fourthLetterOfLastName);         //e
+fifthLetterOfLastName = lastName[4];
+console.log(fifthLetterOfLastName);         //l
+sixthLetterOfLastName = lastName[5];
+console.log(sixthLetterOfLastName);         //a
+seventhLetterOfLastName = lastName[6];
+console.log(seventhLetterOfLastName);       //c
+eighthLetterOfLastName = lastName[7];
+console.log(eighthLetterOfLastName);         //e
+
+var x = "Saurabh";
+x1st = x[0];
+console.log(x1st);      //S
+x2nd = x[1];
+console.log(x2nd);      //a
+x3rd = x[2];
+console.log(x3rd);      //u
+x4th = x[3];
+console.log(x4th);      //r
+x5th = x[4];
+console.log(x5th);      //a
+x6th = x[5];
+console.log(x6th);      //b
+x7th = x[6];
+console.log(x7th);      //h
+x8th = x[7];
+console.log(x8th);      //undefined
+
+
+//IMMUTIBILITY(CANT BE CHANGED/ALTERED IF CREATED) OF STRING
+var myStr = "Jello World";
+myStr[0] = "H";   //fix me
+console.log(myStr[0]);      //J....H will not replace J coz u cant alter an individual letter of string. but u can change the whole string. eg is given below:
+myStr = "Hello World";
+console.log(myStr);         //Hello World
+
+
+//BRACKET NOTATION TO FIND LAST CHARACTER IN STRING
+var firstName = "Ada";
+var firstLetterOfFirstName = firstName[firstName.length-1];
+console.log(firstLetterOfFirstName);
+var lastName = "Lovelace";
+firstLetterOfLastName = lastName[lastName.length-1];
+console.log(firstLetterOfLastName);
+
+var x = "Saurabh";
+var y = "Singh";
+var xLast = x[x.length-1];
+var yLast = y[y.length-1];
+console.log(xLast);
+console.log(yLast);
+
+
+//BRACKET NOTATION TO FIND NTH-TO-LAST CHARACTER IN STRING
+var x = "Saurabh";
+var x3rdToLastLetter = x[x.length-3];
+console.log(x3rdToLastLetter);
+
+var y = "Singh";
+var y2ndToLastLetter = y[y.length-2];
+console.log(y2ndToLastLetter);
+
+
+
+
+//WORD BLANKS
