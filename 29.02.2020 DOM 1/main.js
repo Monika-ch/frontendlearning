@@ -216,8 +216,6 @@ for(var i=0; ; i++){
     console.log(sum);
 }
 console.log(sum);
-
-
 // note: sum of even,odd nos; multiples of 3,5,7; sum uptil x;
 for(var i = 6; i >= 0; i=i-2){
     console.log("I am right now : " + i);
