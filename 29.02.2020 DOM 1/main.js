@@ -209,6 +209,31 @@ console.log(sum);   //outputs 153, we wanted sum shudnt be more than 150, so WRO
 var sum=0;
 for(var i=0; ; i++){
     if (sum + i > 150)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         break;
     }
@@ -219,31 +244,6 @@ console.log(sum);
 
 
 // note: sum of even,odd nos; multiples of 3,5,7; sum uptil x;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 for(var i = 6; i >= 0; i=i-2){
     console.log("I am right now : " + i);
 }
