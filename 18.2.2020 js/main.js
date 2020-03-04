@@ -434,3 +434,371 @@ console.log(y2ndToLastLetter);
 
 
 //WORD BLANKS
+function wordBlanks(myNoun, myAdj, myVerb, myAdverb){
+    var result = "";
+    result += "The" + myAdj + myNoun + myVerb + myAdverb + " to the store.";
+    return result;
+}
+console.log(wordBlanks("dog", "big", "ran", "quickly"));      //Thebigdogranquickly to the store.   ..there is no space btwn the words.
+console.log(wordBlanks(" dog", " big", " ran", " quickly"));  //The big dog ran quickly to the store.
+
+function wordBlank(myNoun, myAdj, myVerb, myAdverb){
+    var result = "";
+    result += "The" + " " + myAdj + " " + myNoun + " " + myVerb + " " + myAdverb + " to the store.";
+    return result;
+}
+console.log(wordBlank("dog", "big", "ran", "quickly"));     //The big dog ran quickly to the store.
+
+
+console.log(wordBlank("bike", "slow", "flew", "slowly"));
+
+
+
+
+
+//STORE MULTIIPLE VALUES WITH ARRAYS
+var ourArray = ["John", 23];
+var myArray = ["Quincy", 1];
+
+
+//NESTED ARRAYS
+var ourArray = [["the universe", 42], ["everything", 101010]];
+var myArray = [["Bulls", 23], ["White Sox", 45]];
+console.log(ourArray);
+console.log(myArray);
+
+//ACCESSS ARRAY DATA WITH INDEXES
+var ourArray = [50,60,70];
+var ourData = ourArray[0];
+console.log(ourData);  //50
+var myArray = [50,60,70];
+var myData = myArray[1];
+console.log(myData);  //60
+
+//MODIFY ARRAY DATA WITH INDEXES
+var ourArray = [18,64,99];
+ourArray[1] = 45;
+console.log(ourArray);  //[18, 45, 99]
+var ourArray = [18,45,99];
+myArray[2] = 45;
+console.log(myArray);   //[50, 60, 45]
+
+//ACCESS MULI-DIMENSIONAL ARRAYS WITH INDEXES
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12],13,14]];
+var myData = myArray[0][0];     //first[] means array data 1 (here its [1,2,3]), second[] means array data (here its 1) within array data 1 [1,2,3]
+console.log(myData);            //1
+var myData = myArray[0][1];
+console.log(myData);            //2
+var myData = myArray[0][2];
+console.log(myData);            //3
+var myData = myArray[1][0];
+console.log(myData);            //4
+var myData = myArray[1][1];
+console.log(myData);            //5
+var myData = myArray[1][2];
+console.log(myData);            //6
+var myData = myArray[2][0];
+console.log(myData);            //7
+var myData = myArray[2][1];
+console.log(myData);            //8
+var myData = myArray[2][2];
+console.log(myData);            //9
+var myData = myArray[3][0];
+console.log(myData);            //[10, 11, 12]
+var myData = myArray[3][1];
+console.log(myData);            //13
+var myData = myArray[3][2];
+console.log(myData);            //14
+var myData = myArray[3][0][0];
+console.log(myData);            //10
+var myData = myArray[3][0][1];
+console.log(myData);            //11
+var myData = myArray[3][0][2];
+console.log(myData);            //12
+
+
+//MANIPULATE ARRAYS WITH PUSH()........to ADD towards end
+var ourArray = ["Simpson", "J", "Cat"];
+ourArray.push(["happy", "joy"]);
+console.log(ourArray);          //[["Simpson", "J", "Cat", ["happy", "joy"]]
+var myArray = [["John",23], ["Cat",2]];
+myArray.push(["dog",3]);
+console.log(myArray);           //[["John",23], ["Cat",2], ["dog",3]]
+
+
+//MANIPULATE ARRAYS WITH POP()........to REMOVE last element towards end
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+console.log(removedFromOurArray);       //3.......(now our array is [1,2])
+var myArray = [["John",23], ["Cat",2]];
+var removedFromMyArray = myArray.pop();
+console.log(removedFromMyArray);       //["Cat",2].......(now our array is ["John",23])
+
+
+//MANIPULATE ARRAYS WITH SHIFT()........to REMOVE first element
+var ourArray = ["Simpson", "J", "Cat"];
+var removedFromOurArray = ourArray.shift();
+console.log(removedFromOurArray);       //Simpson.......(now our array is ["J", "Cat"])
+var myArray = [["John",23], ["Cat",2]];
+var removedFromMyArray = myArray.shift();
+console.log(removedFromMyArray);       //["John",23].......(now our array is [Cat",2]
+
+
+//MANIPULATE ARRAYS WITH UNSHIFT()........to ADD element in the beginning of the array
+var ourArray = ["Simpson", "J", "Cat"];
+ourArray.unshift("Harry");
+console.log(ourArray);       //["Harry", "Simpson", "J", "Cat"]
+var myArray = [["John",23], ["Cat",2]];
+myArray.unshift(43);
+console.log(myArray);       //[43, ["John",23], [Cat",2]]
+
+//we also can REPLACE 1st element by using SHIFT and then UNSHIFT as follows
+var ourArray = ["Simpson", "J", "Cat"];
+ourArray.shift();
+ourArray.unshift("Harry");
+console.log(ourArray);       //["Harry", "J", "Cat"]....Simpson was replaced by Harry
+var myArray = [["John",23], ["Cat",2]];
+myArray.shift();
+myArray.unshift(43);
+console.log(myArray);       //[43, [Cat",2]].......43 replaced ["John",23]
+
+
+//SHOPPING LIST
+var myList = [["cereal",3], ["milk",2], ["bananas",3], ["juice",2], ["eggs",12]];
+console.log(myList);
+
+
+
+
+
+
+//WRITE REUSABLE CODDE WITH FUNCTIONS
+function functionName() {
+    console.log("Hi there!");
+}
+functionName();             //every time function name(here, functionName) wud be invoked/called, it will say Hi there!
+
+function ourReusableFunction() {
+    console.log("Heyya, world");
+}
+ourReusableFunction();      //Heyya, world
+
+function reusableFunction() {
+    console.log("Hi, world");
+}
+reusableFunction();         //Hi, world
+
+
+
+//PASSING VALUES TO FUNCTIONS WITH ARGUMENTS
+function ourFunctionWithArgs(a, b) {
+    console.log(a - b);
+}
+ourFunctionWithArgs(10, 5);      //5....a-b = 10-5 = 5
+
+function functionWithArgs(a, b) {
+    console.log(a + b);
+}
+functionWithArgs(10, 5);         //15....a+b = 10+5 = 5
+
+
+
+//GLOBAL SCOPE(:visibility of variables(:variables that are defined outside function block have global scope(:can be seen everywhere in ur js code))) AND FUNCTIONS
+var myGlobal = 10;
+
+function fun1(){
+    oopsGlobal = 5;         //its a variable outusing var keyword; if writing variable like this, variable becomes global(could be seen in whole js even outside function block) and defined 
+}
+
+/*function addNumbers(){
+    var sumTill10 = 0 + 1 + 2 + 3 + 4 + 5 +6 +7+8+9+10 +11;
+    return sumTill10;
+}
+
+sumTill10 = 100;
+*/
+
+function fun2(){
+    /*console.log("Sum of 10 numbers" + addNumbers() * 100)
+    console.log("Sum till 100:" + sumTill10);*/
+
+    var output = "";
+    if (typeof myGlobal != "undefined"){                //!= this means not equals to
+        output += "myGlobal: " + myGlobal; 
+    }
+    if (typeof oopsGlobal != "undefined"){
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);                         //by calling both functions fun1 & fun2 outside function block, it ouputs- myGlobal: 10 oopsGlobal: 5
+}
+fun1();
+fun2();
+// for(i=0; i < 10; ++i) fun2();
+
+
+                        // VS
+
+/*         
+var myGlobal = 10;
+
+function fun1(){
+    var oopsGlobal = 5;     //its a variable using var keyword; if writing variable like this in a function block, variable becomes undefined 
+}
+
+function fun2(){
+    var output = "";
+    if (typeof myGlobal != "undefined"){
+        output += "myGlobal: " + myGlobal; 
+    }
+    if (typeof oopsGlobal != "undefined"){
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);    //calling both functioins outputs- myGlobal: 10
+}
+fun1();
+fun2();
+*/
+
+
+/*
+// LOCAL SCOPE AND FUNCTIONS
+function myLocalScope(){
+    var myVariable = 5;
+    console.log(myVariable);     //5
+}
+myLocalScope();
+
+console.log(myVariable);        //gives error if console.log outside function block coz it looks for myVariable outside the function
+*/
+
+
+// GLOBAL VS LOCAL SCOPE IN FUNCTIONS
+/* Varibles can have same name in global and local scope, in such case local scope takes precendence over global scope. */
+// CASE 1
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+
+    return outerWear;
+}
+console.log(myOutfit());        //T-Shirt
+console.log(outerWear);        //T-Shirt
+
+
+// CASE 2
+var outWear = "T-Shirt";
+
+function outfit() {
+    outWear = "Sweater";    //not adding var gave local scope precedence so console.log(OutWear) outputs Sweater not T-Shirt
+
+    return outWear;
+}
+console.log(outfit());        //Sweater
+console.log(outWear);        //Sweater
+
+
+// CASE 3
+var OutWear = "T-Shirt";
+
+function Outfit() {
+    var OutWear = "Sweater";    //adding var gave global scope precedence so console.log(OutWear) outputs T-Shirt not Sweater
+
+    return OutWear;
+}
+console.log(Outfit());        //Sweater
+console.log(OutWear);        //T-Shirt
+
+
+//CASE 4
+var outwear = "T-Shirt";
+
+function OutFit() {
+    var outwear = "Sweater";
+    return outwear;
+}  
+console.log("I love my " + OutFit() + " and " + outwear + "!");
+
+
+
+//RETURN A VALUE FROM A FUNCTION WITH RETURN
+function minusSeven(num) {
+    return num - 7;
+}
+console.log(minusSeven(10));   //3
+
+function add(num) {
+    return num + 10;
+}
+console.log(add(55));       //65
+console.log(add(100) + minusSeven(11));     //114
+console.log(add(100) - minusSeven(11));     //106
+
+function timesFive(num) {
+    return num * 5;
+}
+console.log(timesFive(5));      //25
+
+
+
+// UNDERSTANDING UNDEFINED VALUE RETURNED FROM A FUNCTION
+var sum = 0;
+function addThree() {
+    sum = sum + 3;
+}
+console.log(sum);           //0
+console.log(addThree());    //undefined coz return not mentioned
+
+function addFive() {
+    sum += 5;
+}
+console.log(addFive());     //undefined
+console.log(sum);           //8
+
+
+
+//ASSIGNMENT WITH A RETURNED VALUE
+
+var changed = 0;
+
+function change(num) {
+    return (num + 5)/3;
+}
+changed = change(10);
+console.log(changed);       //5
+
+var processed = 0;
+
+function process(num) {
+    return (num + 3)/5;
+}
+processed = process(7);
+console.log(processed);     //2
+
+
+
+//STAND IN LINE
+//CASE 1
+function next(arr, item) {
+    arr.push(item);
+    return item;
+}
+
+var testArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr));      //Before: [1,2,3,4,5]
+console.log(next(testArr, 6));                          //6
+console.log("After: " + JSON.stringify(testArr));       //After: [1,2,3,4,5,6]
+
+//CASE 2
+function Next(Arr, Item) {
+    Arr.push(Item);
+    return Arr.shift();
+}
+
+var TestArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(TestArr));      //Before: [1,2,3,4,5]
+console.log(Next(TestArr, 6));                          //1
+console.log("After: " + JSON.stringify(TestArr));       //After: [2,3,4,5,6]
+
+
+
+//BOOLEAN VALUES
